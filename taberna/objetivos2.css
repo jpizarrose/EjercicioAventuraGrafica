@@ -1,0 +1,39 @@
+#flechaObjetivo1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 42%;
+    left: 40%;
+    display: none;
+}
+
+#objetivo1{
+    position: absolute;
+    width: 250px;
+    height: 214px;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    top: 58%;
+    left: 35%;
+    display: none;
+}
+
+#flechaObjetivo2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 27%;
+    left: 25%;
+    display: none;
+}
+
+#objetivo2{
+    position: absolute;
+    width: 270px;
+    height: 314px;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    top: 43%;
+    left: 19%;
+    display: none;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Amanecer</title>
+</head>
+
+<body onload =" declararEscena(6); escena6()">
+    <div class="fondo">
+        <img src="img/amanecer.jpg" id="tabernaFuera" alt="">
+        <div id="cuadroTexto" class="cuadroTexto">
+            <div class="texto2">
+                <div class="texto">
+                    <p id="texto1"> Te levantas por la maañan bien descansado para poder continuar tu camino.
+                    </p>
+                </div>
+                <div class="orador">
+                    <img src="img/jugador.png" class="narrador" id="narrador" alt=""> 
+                    <h5 id="nombre">Jugador</h5>
+                </div>
+            </div>
+            <div class="botones">
+                <button id="saltarTexto" onclick="saltarTexto()">Saltar texto</button>
+                <button onclick="cambiarEscena(1) " id="volverJugar">Volver a jugar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+#flechaObjetivo1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 30%;
+    left: 83%;
+    display: none;
+}
+
+#objetivo1{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    top: 42%;
+    left: 84%;
+    display: none;
+}
+
+#flechaObjetivo2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 69%;
+    left: 29%;
+    display: none;
+}
+
+#objetivo2{
+    position: absolute;
+    width: 258px;
+    height: 90px;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    top: 83%;
+    left: 24%;
+    display: none;
+}
+
+#monederoAjeno {
+    position: absolute;
+    width: 70px;
+}

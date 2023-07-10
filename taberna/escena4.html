@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Mesa de juego</title>
+</head>
+<style>
+    .jugadores {
+        display : block !important;
+        font-size: xx-large;
+        
+    }
+    .jugadorDados {
+        height: 100px;
+    }
+    .botones {
+        margin-top: 100px;
+    }
+
+    button {
+        display : inline !important;
+        width: 25%;
+    }
+
+    #texto6 {
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    h2 {
+        display : none ;
+        margin-bottom:30px ;
+    }
+</style>
+<!-- <audio autoplay loop>
+    <source src="" type="audio/mp3" />
+</audio> -->
+<body onload ="declararEscena(4) ; cuadroTextoArriba() ; mostrarOro()  ">
+    <div class="fondo">
+        <img src="img/mesaJuegos.webp" id="tabernaFuera" alt="">
+        <div id="cuadroTexto" class="cuadroTexto">
+            <div class="texto2">
+                <div class="jugadorDados">    
+                    <p id="jugadorDados" class="jugadores">El jugador de dados ha sacado un : </p>                 
+                </div>
+                <h2 id="texto6"> No tienes dinero suficiente para jugar!</h2>
+                <div class="jugador">
+                    <p id="jugador" class="jugadores">Has sacado un : </p> 
+                </div>
+                <p id="texto1"></p>
+                
+            </div>
+            <div class="botones">
+                <button id="" onclick="dados()">Jugar por 5 monedas</button>
+                <button id="" onclick="cambiarEscena(2)">Volver</button>
+            </div>
+        </div>
+        <div class="oro">
+            <img src="img/monedero.png" id="monedero" alt="">
+            <p id="cantidadOro">10</p>
+        </div>
+    </div>
+</body>
+</html>

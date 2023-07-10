@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="objetivos2.css">
+    <title>Taberna</title>
+</head>
+
+<body onload =" declararEscena(2); escena2() ; cuadroTextoArriba() ; mostrarOro()">
+    <div class="fondo">
+        <img src="img/interior2.jpg" id="tabernaFuera" alt="">
+        <div id="cuadroTexto" class="cuadroTexto">
+            <div class="texto2">
+                <div class="texto">
+                    <p id="texto1"> Parece que hay bastante ambiente en la taberna , puedes ir a la barra a tomar algo o conversar con alguien</p>
+                    <p id="texto2"> " Hey tu, si si tu . Te apetece jugar una partida de dados? 5 monedas de oro para jugar , sin oro de por medio se hace muy aburrido " </p>
+                    <p id="texto3"> " Es muy sencillo , quien saque el numero mas alto gana " </p>
+                    <p id="texto4"> " Largo de aqui antes de que me enfade " </p>
+                    <p id="texto5"> * Procedes a tocarle una oreja * </p>
+                    <p id="texto6"> " Bueno , yo te he avisado ... " </p>
+                </div>
+                <div class="orador">
+                    <img src="img/jugador.png" id="narrador" class="narrador" alt="">
+                    <h5 id="nombre" class="nombre">Jugador</h5>
+                    <img src="img/ludopata.png" id="narrador1" class="narrador" alt=""> 
+                    <h5 id="nombre1" class="nombre">Jugador de dados</h5>
+                    <img src="img/guerrero.png" id="narrador2" class="narrador" alt=""> 
+                    <h5 id="nombre1" class="nombre">Guerrero</h5>
+                </div>
+            </div>
+            <div class="botones">
+                <button id="irBarra" onclick="cambiarEscena(3)">Ves a la barra</button>
+                <button id="saltarTexto" onclick="saltarTexto()">Saltar texto</button>
+                <button id="comoJugar" onclick="escena2()">Como se juega</button>
+                <button id="jugarDados" onclick="cambiarEscena(4)">Jugar dados</button>
+                <button id="siguienteTexto" onclick="escena3() ; esconderBotonSiguienteTexto()">Continuar</button>
+                <button id="molestar" onclick="escena2() ">Molestar</button>
+                <button id="aceptarDestino" onclick="cambiarEscena(5) ">Aceptar tu destino</button>
+            </div>
+        </div>
+        <img src="img/flecha.gif" id="flechaObjetivo" alt="">
+        <span id="objetivo"></span>
+        <img src="img/flecha.gif" id="flechaObjetivo1" alt="">
+        <span id="objetivo1" onclick="accionEspecial(2)"></span>
+        <img src="img/flecha.gif" id="flechaObjetivo2" alt="">
+        <span id="objetivo2" onclick="accionEspecial(4)"></span>
+        <div class="oro">
+            <img src="img/monedero.png" id="monedero" alt="">
+            <p id="cantidadOro">15</p>
+        </div>
+    </div>
+</body>
+
+</html>
